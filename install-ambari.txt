@@ -5,7 +5,7 @@ yum install yum-utils createrepo -y
 cat /etc/yum.repos.d/ambari.repo
 [ambari-2.7.5.0]
 name=ambari Version - ambari-2.7.5.0
-baseurl=http://server01.nirulabs.com/ambari/centos7/2.7.5.0-72/
+baseurl=http://server01.example.com/ambari/centos7/2.7.5.0-72/
 gpgcheck=1
 gpgkey=https://<id:password>archive.cloudera.com/p/ambari/centos7/2.x/updates/2.7.5.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 enabled=1
@@ -14,7 +14,7 @@ priority=1
 [root@server01 yum.repos.d]# cat hdp.repo
 [HDP-3.1.5.0]
 name=HDP Version - HDP-3.1.5.0
-baseurl=http://server01.nirulabs.com/HDP/
+baseurl=http://server01.example.com/HDP/
 gpgcheck=1
 gpgkey=https://<id:password>@archive.cloudera.com/p/HDP/centos7/3.x/updates/3.1.5.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 enabled=1
@@ -23,7 +23,7 @@ priority=1
 [root@server01 yum.repos.d]# cat hdp-utils.repo
 [HDP-UTILS]
 name=HDP Version - HDP-3.1.5.0
-baseurl=http://server01.nirulabs.com/HDP-UTILS/
+baseurl=http://server01.example.com/HDP-UTILS/
 gpgcheck=1
 gpgkey=https://<id:password>@archive.cloudera.com/p/HDP/centos7/3.x/updates/3.1.5.0/RPM-GPG-KEY/RPM-GPG-KEY-Jenkins
 enabled=1
